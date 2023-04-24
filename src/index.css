@@ -1,13 +1,102 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background-color: #7ca3a569;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.heading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: -0.4rem;
+  padding: 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ffffffbd;
+  color: #4a667d;
 }
+
+.cards {
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  font-family: 'Josefin Sans', sans-serif;
+  width: 300px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #e5ebeebd;
+}
+
+.card:hover {
+  box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.card_img {
+  width: 100%;
+  height: 322px;
+  object-fit: cover;
+}
+
+.card_info {
+  padding: 15px;
+  text-align: center;
+}
+.card_category {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  color: #324681;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+
+.card_title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #3500f1;
+}
+
+button {
+  background-color: #e50914;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #cf1515;
+}
+
+
+
+
+/* Media Queries */
+
+
+@media (max-width: 768px) {
+
+  .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .card {
+  width: 80%;
+  margin: 20px 0;
+  }
+  
+  }
